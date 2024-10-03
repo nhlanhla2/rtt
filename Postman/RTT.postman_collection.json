@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "f4fcd9cb-6d2c-4a8e-8548-498a3e8e9805",
+		"name": "RTT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5917156"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "create-client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Harry\",\n    \"Surname\": \"Smith\",\n    \"Cell\": \"0150120110\",\n    \"addresses\": [\n        {\n            \"type\": 0,\n            \"street\": \"Lavender Road\",\n            \"suburb\": \"Wonderboom\",\n            \"city\": \"Pretoria\",\n            \"province\": \"Gauteng\",\n            \"country\": \"South Africa\",\n            \"postalCode\": \"2001\"\n        },\n        {\n            \"type\": 1,\n            \"street\": \"John Voster Avenue\",\n            \"suburb\": \"Techno Park\",\n            \"city\": \"Centurion\",\n            \"province\": \"Gauteng\",\n            \"country\": \"South Africa\",\n            \"postalCode\": \"0199\"\n        },\n        {\n            \"type\": 2,\n            \"street\": \"Begonia Road\",\n            \"suburb\": \"Doornpoort\",\n            \"city\": \"Pretoria\",\n            \"province\": \"Gauteng\",\n            \"country\": \"South Africa\",\n            \"postalCode\": \"2121\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5042/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5042",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5042/api/client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5042",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-client-by-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5042/api/client/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5042",
+							"path": [
+								"api",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-client-details",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

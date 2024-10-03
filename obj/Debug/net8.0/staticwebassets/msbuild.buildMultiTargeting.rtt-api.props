@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/rtt-api.props" />
+</Project>
